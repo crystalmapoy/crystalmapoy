@@ -1,0 +1,35 @@
+body {
+	background-color: green; 
+}
+
+h1 {
+	text-align: center;
+}
+
+#welcome {
+	color: orange;
+	font-size: 20px;
+	text-align: center;
+}
+
+p {
+	color: white;
+}
+
+img {
+	width: 30%;  
+	border: solid black 2px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.jokes {
+	color: yellow;
+	text-align: right; 
+	font-size: 15px;
+}
+
+#specialimage {
+	border: solid yellow;
+}
