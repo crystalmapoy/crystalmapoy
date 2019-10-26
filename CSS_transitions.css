@@ -1,1 +1,98 @@
+  .circle {
+	 border-radius: 100px; 
+	 /*border-radius has to do with how circular the shape is
+	 20px is a square with rounded corners
+	 100px is a perfect circle
+	 1:2 ratio btwn radius and width/height
+	 radius:width/height
+	 */
+	 border: solid #FFDF00 5px;
+	 background-color: white;
+	 width: 200px;
+	 height: 200px;
+ }
+ 
+ .box {
+	 width: 100px;
+	 height: 100px;
+	 border: solid #FCC201 5px;
+	 background-color: white; 
+ }
+ 
+ .triangle {
+	 width: 0px;
+	 height: 0px;
+	 /*becomes a point bc width/height is 0 */
+	 background-color: white; 
+	 /*chnage background-color to white to isolate traingle and hide square*/
+	 border-right: solid 50px transparent;
+	 border-left: solid 50px transparent;
+	 border-top: solid 50px transparent;
+	 border-bottom: solid 100px red; 
+ }
+ 
+ #firstcirc {
+	 animation: slide-right 3s alternate;
+	 /* add infinite for loop
+	 alternate makes it bounce back*/
+ }
+ 
+ @keyframes slide-right {
+	 from {
+		 margin-top: 0%; 
+		 margin-left: 0%;
+		 background-color: red;
+	 }
+	 
+	 to {
+		 margin-top: 60%;
+		 margin-left: 90%; 
+		 background-color: yellow; 
+	 }
+ }
+ 
+ #firstbox {
+	 animation: grow 4s;
+ }
+ 
+ @keyframes grow {
+	 from {
+		 width: 0px;
+		 height: 0px;
+	 }
+	 
+	 to {
+		 width: 500px;
+		 height: 500px; 
+	 }
+ }
+ 
+/*you can use 0% and 100% instead of from and to
+or you can break it up like 0 15 75 100 etc */
+ 
+ #tri {
+	 animation: rotate .3s; 
+ }
+ 
+ @keyframes rotate {
+	 0% {
+		 transform: rotate(0deg);
+	 }
+	 
+	 25% {
+		 transform: rotate(90deg);
+	 }
+	 50% {
+		 transform: rotate(180deg);
+	 }
+	 75% {
+		 transform: rotate(270deg);
+	 }
+	 100% {
+ 		 transform: rotate(360deg);
+	 }
+ }
+ 
+ 
+ 
  
