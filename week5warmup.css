@@ -1,0 +1,36 @@
+.cube {
+	width: 100px;
+	height: 100px;
+	border: solid #FCC201 5px;
+	background-color: white;
+}
+
+@keyframes rotate-diagonal {
+	from {
+		transform: rotate(0deg);
+		margin-top: 0%;
+		margin-left: 0%;
+	}
+	
+	to {
+		transform: rotate(360deg);
+		margin-top: 60%;
+		margin-left: 80%;
+	}
+	
+ }
+ 
+ #coolcube {
+	 animation: rotate-diagonal 3s infinite alternate;
+ }
+ 
+ .trapezoid {
+	background-color: white; 
+	width: 55px;
+	height: 55px;
+	border-right: solid transparent 50px;
+	border-left: solid transparent 50px;
+	border-top: solid transparent 50px;
+	border-bottom: solid orange 50px;
+
+ }
