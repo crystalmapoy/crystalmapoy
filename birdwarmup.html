@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+`	<title>Birds that can't fly :( </title>
+	<link rel="stylesheet" type="text/css" href="birdwarmup.css">
+</head>
+
+<body style="background-color: lightblue;" >
+<center>
+	<h1 id="birdName">Sage Grouse</h1>
+	
+	<img style="border: solid yellow 5px;" id="birdIMG" width="50%" src="https://abcbirds.org/wp-content/uploads/2017/12/Greater-Sage-Grouse_PR_Warren-Cooke.jpg">
+	
+	<br>
+	<button onclick="penguin()">Penguin</button>
+	<button onclick="sageGrouse()">Sage Grouse</button>
+	
+	<script type="text/javascript">
+		function penguin(){
+		document.getElementById("birdName").innerHTML = "Penguin"; //innnerHTML corresponds to anything within tags // 
+		document.getElementById("birdIMG").src = "http://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F502b3c6a-ec20-11e8-8888-d940336e3709.jpg?crop=4346%2C2445%2C639%2C739&resize=685"; 
+		}
+		function sageGrouse(){
+		document.getElementById("birdName").innerHTML = "Sage Grouse"; 
+		document.getElementById("birdIMG").src = "https://abcbirds.org/wp-content/uploads/2017/12/Greater-Sage-Grouse_PR_Warren-Cooke.jpg"; 
+		}
+	</script>
+	<a href="page2.html">second page!</a>
+</center>
+</body>
+</html>
