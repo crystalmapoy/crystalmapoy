@@ -1,84 +1,83 @@
 <!DOCTYPE html>
 <html>
-
 <head> 
-	<title>Crystal Mapoy</title>
+	<title>final project title?</title>
+		<style type="text/css">
+			body {
+			background-color: green;
+			text-align: center;
+			}
+			.container {
+			border: dashed yellow 5px;
+			}
+			.talk{
+			display: none; 
+			font-size: 20px;
+			}
+		</style>
 </head>
-
-
-
-
-<body style="background: gold";> 
-	<!--
-	style is an attribute
-	background another attribute
-	-->
-	<center>
+<body> 
+	<div class = "container">
+		<h1>Hi! Welcome to my website!</h1>
+		<h2> Click the buttons to show or hide the text</h2> 
+	</div>
+	<br>
+	<button onclick="hide()">Hide</button>
+	<button onclick="show()">Show</button>
 	
-	<h1>Welcome to my website!</h1>
-	<h2>This is a cool cool cool website</h2>
-	<h3>I am an h3 heading</h3>
-	<h4>I get smaller</h4>
-	<h5>everytime i increase a number</h5>
-	<h6>but h6 is the maximum but i'll still be bold</h6>
+	<br>
 	
-	<!--
-	h1-h6
-	h1 is biggest heading
-	h6 smallest heading 
-	headings always bold 
-	-->
+	<h1>Let's start a conversation!</h1>
+	<button onclick="start()">START</button>
+	<div id = "introduction" class="talk">
+		<p>
+		<b>
+		Hello! I am a computer bot designed to comfort your 
+		loneliness. <br>
+		Click the button to continue.
+		</b>
+		</p>
+	<button onclick="show()">Continue</button>
+	</div>
 	
-	<p>Hello this is my website! :)</p>
+	<br>
 	
-	<a href="https://www.kungfutea.com">
-		<img 
-		width = "50%"		
-		src="https://static.boredpanda.com/blog/wp-content/uploads/2014/03/cute-fluffy-animals-coverimage.jpg"
-		>
-	</a>
-	
-
-	<p>
-		<a href="https://www.kungfutea.com" target="__blank">
-		Click Here!!!
-		<!--
-		target="__blank" will open link to a new tab 
-		it has two underscores
-		-->
-		</a>
-	</p>
+	<div id = "introduction" class="talk">
+		<p>
+		<b>
+		How are you feeling today?<br>
+		Click your response.
+		</b>
+		</p>
+	<button onclick="happy()">Good as hell ;)</button>
+	<button onclick="sad()">Down in the dumps :(</button>
+	</div>
 
 	
-	<p><a href="https://www.kungfutea.com">This is the best boba shop periodt!</a></p>
-	
-	<p><a href="https://www.kungfutea.com">This</a> is the best boba shop periodt!</p>
-	
-	<!-- the word this will be linked
-	
-	images:
-	percentages work with width only
-	pixels is like enforced size
-	percentage adjusts with size of website so if u minimalize it. 
-	it will change the image size to adjust to the webpage size
-	
-	-->
-	
-	<p style="font-family: Times New Roman; Color: blue;"> 
+	<script type="text/javascript">
+		function hide() {
+			element = document.querySelector('.container'); 
+            element.style.visibility = 'hidden'; 
+		}
+		function show() {
+			element = document.querySelector('.container'); 
+			element.style.visibility = 'visible'; 
+		}
+		function start() {
+		  var x = document.getElementById("introduction");
+		  if (x.style.display === "none") {
+			x.style.display = "block";
+		  } else {
+			x.style.display = "none";
+		  }
+		}
+		/*
+		function cont.() {
+			element = document.getElementById('.continue'); 
+			element.style.visibility = 'visible'; 
+		}
+		*/
 		
-		This is the font Times New Roman with the color blue
-		
-	</p>
-	
-	<p style="font-family: Georgia; Color: Red; border-color: green 1px solid;"> 
-		Wassup
-	</p>
-	
-	</center>
+	</script>
 </body>
-
-<!-- 
-This is a comment
--->
-
-</html> 
+</html>
